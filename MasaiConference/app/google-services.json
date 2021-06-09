@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "305096231409",
+    "project_id": "meeting-7743e",
+    "storage_bucket": "meeting-7743e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305096231409:android:587bffab3d5a3de9d99c50",
+        "android_client_info": {
+          "package_name": "com.masai.masaiconference"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305096231409-3rh2llj1d2euon694e0q2c4b48cat4r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlUXLLe38-7_R6cG8c0oUS-AdYn_O8TaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305096231409-3rh2llj1d2euon694e0q2c4b48cat4r1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
