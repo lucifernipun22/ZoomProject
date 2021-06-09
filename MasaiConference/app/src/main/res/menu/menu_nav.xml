@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_baseline_chat_bubble_outline_24"
+        android:title="Meet &amp; chat" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="Meetings" />
+    <item
+        android:id="@+id/nav_users"
+        android:icon="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:title="Contacts" />
+    <item
+        android:id="@+id/nav_addblogs"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+
+
+
+
+</menu>
