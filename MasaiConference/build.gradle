@@ -5,6 +5,10 @@ buildscript {
         google()
         jcenter()
         maven { url "https://jitpack.io" }
+        maven{
+            url "https://dl.bintray.com/infideap2/Drawer-Behavior"
+        }
+
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.1"
@@ -21,6 +25,12 @@ allprojects {
         google()
         jcenter()
         maven { url "https://jitpack.io" }
+        maven{
+            url "https://dl.bintray.com/infideap2/Drawer-Behavior"
+        }
+        maven {
+            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+        }
     }
 }
 
