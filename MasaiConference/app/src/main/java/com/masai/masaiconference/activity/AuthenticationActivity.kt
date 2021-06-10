@@ -38,6 +38,11 @@ override fun onCreate(savedInstanceState: Bundle?) {
     onSignInWithGoogleClick()
     onSignInWithEmailClick()
     onSkipClick()
+    if (restorePrefData()) {
+        val mainActivity = Intent(applicationContext, MainActivity::class.java)
+        startActivity(mainActivity)
+        finish()
+    }
 }
 
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -83,12 +88,14 @@ private fun showSkipSignIn() {
 private fun onSignInWithGoogleClick() {
     binding.btnSignInGoogle.setOnClickListener {
         startSignInFlow(AuthUI.IdpConfig.GoogleBuilder().build())
+        savePrefsData()
     }
 }
 
 private fun onSignInWithEmailClick() {
     binding.btnSignInEmail.setOnClickListener {
         startSignInFlow(AuthUI.IdpConfig.EmailBuilder().build())
+        savePrefsData()
     }
 }
 
@@ -114,4 +121,16 @@ private fun startSignInFlow(idpConfig: AuthUI.IdpConfig) {
         rcSignIn
     )
 }
+
+    private fun restorePrefData(): Boolean {
+        val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
+        return pref.getBoolean("isAuthOpnend", false)
+    }
+
+    private fun savePrefsData() {
+        val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
+        val editor = pref.edit()
+        editor.putBoolean("isAuthOpnend", true)
+        editor.commit()
+    }
 }

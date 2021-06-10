@@ -36,13 +36,14 @@
     <string name="main_error_create_dynamic_link">Error creating Meeting link. Please try again.</string>
     <string name="main_creating_dynamic_link">Please wait. Creating Meeting link.</string>
 
-    <string name="meeting_history_rejoin">REJOIN</string>
+    <string name="meeting_history_rejoin">Re-Join</string>
     <string name="meeting_history_last_joined_time">Last joined %1$s</string>
     <string name="meeting_history_toolbar_title">Meeting History</string>
     <string name="meeting_history_delete_meetings">Delete Meetings</string>
     <string name="meeting_history_empty">You haven\'t joined any meetings yet. Create or Join any meeting from the home screen.</string>
     <string name="meeting_history_meeting_code_copied">Meeting Code copied to Clipboard</string>
-
+    <string name="text_share_all_images">Share images via</string>
+    <string name="text_no_email_app_found">No Email application installed on the device</string>
     <string name="profile_sign_out">Sign Out</string>
     <string name="profile_user_not_authenticated">User not signed in</string>
     <string name="profile_dark_mode">Dark Mode</string>

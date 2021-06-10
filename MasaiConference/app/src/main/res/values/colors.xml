@@ -13,4 +13,6 @@
 
     <color name="splashBgColor">#1976D2</color>
     <color name="dividerColor">#E0E0E0</color>
+    <color name="tx_credit">#ef5350</color>
+    <color name="black">#FF000000</color>
 </resources>
