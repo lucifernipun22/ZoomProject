@@ -23,7 +23,7 @@ import kotlinx.android.synthetic.main.activity_creat_meeting.*
 import kotlinx.android.synthetic.main.activity_creat_meeting.view.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class CreatMeetingActivity : AppCompatActivity() {
+class CreateMeetingActivity : AppCompatActivity() {
 
     private val viewModel by viewModel<MainViewModel>() // Lazy inject ViewModel
     private lateinit var binding: ActivityCreatMeetingBinding
@@ -47,13 +47,10 @@ class CreatMeetingActivity : AppCompatActivity() {
         ivMeetingHistory.setOnClickListener {
             onHistory()
         }
-
-
-
     }
 
     private fun onHistory() {
-        val intent = Intent(this@CreatMeetingActivity, HistoryActivity::class.java)
+        val intent = Intent(this@CreateMeetingActivity, HistoryActivity::class.java)
         startActivity(intent)
     }
 
