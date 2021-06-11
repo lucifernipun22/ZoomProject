@@ -3,20 +3,12 @@ package com.masai.masaiconference.fragment
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.AppCompatButton
-import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
-import com.google.android.material.navigation.NavigationView
-import com.infideap.drawerbehavior.AdvanceDrawerLayout
-import com.masai.masaiconference.CreatMeetingActivity
+import com.masai.masaiconference.CreateMeetingActivity
 import com.masai.masaiconference.R
-import com.masai.masaiconference.`interface`.OnRowItemClicked
 import com.masai.masaiconference.activity.HistoryActivity
-import com.masai.masaiconference.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.fragment_meetand_chat.*
 import kotlinx.android.synthetic.main.fragment_meetand_chat.view.*
 
 
@@ -57,7 +49,7 @@ class MeetandChatFragment : Fragment() {
 
     private fun secondInit(view: View){
         view.appCompatButton_create.setOnClickListener {
-            val intent = Intent(activity, CreatMeetingActivity::class.java)
+            val intent = Intent(activity, CreateMeetingActivity::class.java)
 
 
             startActivity(intent)
