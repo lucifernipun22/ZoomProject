@@ -21,9 +21,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
+
         <activity android:name=".activity.JoinActivity"></activity>
         <activity android:name=".activity.ContactActivity" />
-        <activity android:name=".CreatMeetingActivity" />
+        <activity android:name=".CratMeetingActivity" />
+
+       
         <activity android:name=".activity.HistoryActivity" />
         <activity android:name=".activity.AuthenticationActivity" />
         <activity android:name=".activity.IntroductionActivity" />
