@@ -6,9 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.masai.masaiconference.CreateMeetingActivity
+
+import com.masai.masaiconference.CratMeetingActivity
+import com.masai.masaiconference.R
+import com.masai.masaiconference.activity.ContactActivity
+import com.masai.masaiconference.activity.HistoryActivity
+import com.masai.masaiconference.activity.JoinActivity
+import com.masai.masaiconference.scheduler.views.AlarmActivity
+import kotlinx.android.synthetic.main.fragment_meetand_chat.*
+
+
 import com.masai.masaiconference.R
 import com.masai.masaiconference.activity.HistoryActivity
+
 import kotlinx.android.synthetic.main.fragment_meetand_chat.view.*
 
 
@@ -37,6 +47,9 @@ class MeetandChatFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initViews(view)
         secondInit(view)
+        ThirdInit(view)
+        FourthInit(view)
+        FifthInit(view)
     }
     private fun initViews(view: View) {
         view.appCompatButtonHistory.setOnClickListener {
@@ -55,6 +68,25 @@ class MeetandChatFragment : Fragment() {
             startActivity(intent)
         }
     }
+    private fun ThirdInit(view: View) {
+        view.cardView.setOnClickListener {
+            val intent = Intent(activity, ContactActivity::class.java)
+            startActivity(intent)
 
+        }
+    }
+    private fun FourthInit(view: View) {
+        view.appCompatButton2.setOnClickListener {
+            val intent = Intent(activity, JoinActivity::class.java)
+            startActivity(intent)
 
+        }
+    }
+    private fun FifthInit(view: View) {
+        view.appCompatButton3.setOnClickListener {
+            val intent = Intent(activity, AlarmActivity::class.java)
+            startActivity(intent)
+
+        }
+    }
 }

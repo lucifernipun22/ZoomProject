@@ -9,6 +9,7 @@
     <dimen name="text_size_xl">24sp</dimen>
     <dimen name="text_size_xxl">32sp</dimen>
     <dimen name="dp_0">0dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
     <dimen name="dp_0.2">0.2dp</dimen>
     <dimen name="dp_1">1dp</dimen>
     <dimen name="dp_2">2dp</dimen>

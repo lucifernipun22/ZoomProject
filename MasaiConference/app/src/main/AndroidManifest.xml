@@ -4,6 +4,13 @@
     package="com.masai.masaiconference">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- permissions to write contacts -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" /> <!-- permissions to make a call -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- permissions to send sms -->
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- permissions to write sms -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:name=".MasaiConference"
@@ -14,10 +21,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-        <activity android:name=".CreateMeetingActivity"></activity>
+
+        <activity android:name=".activity.JoinActivity"></activity>
+        <activity android:name=".activity.ContactActivity" />
+        <activity android:name=".CratMeetingActivity" />
+
+       
         <activity android:name=".activity.HistoryActivity" />
         <activity android:name=".activity.AuthenticationActivity" />
         <activity android:name=".activity.IntroductionActivity" />
+        <activity android:name=".scheduler.views.AlarmActivity">
+
+        </activity>
         <activity
             android:name=".activity.SplashActivity"
             android:screenOrientation="portrait">
@@ -28,6 +43,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.MainActivity" />
+        <receiver android:name=".scheduler.controllers.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

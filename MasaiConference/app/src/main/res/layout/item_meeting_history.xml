@@ -63,7 +63,7 @@
                 android:layout_marginBottom="16dp"
                 android:textColor="?android:attr/textColorSecondary"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/tvMeetingCode"
+                app:layout_constraintEnd_toEndOf="@+id/tvContact"
                 app:layout_constraintStart_toStartOf="@+id/tvMeetingCode"
                 app:layout_constraintTop_toBottomOf="@+id/tvMeetingCode"
                 tools:text="Last joined 23 minutes ago" />
