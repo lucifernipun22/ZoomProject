@@ -6,6 +6,7 @@ import com.chibatching.kotpref.Kotpref
 import com.masai.masaiconference.module.appModule
 import com.masai.masaiconference.module.mainModule
 import com.masai.masaiconference.module.meetingHistoryModule
+import net.danlew.android.joda.JodaTimeAndroid
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -21,7 +22,8 @@ class MasaiConference : Application() {
         initializeKotPref()
 
         initializeKoin()
-
+        //initializing our Parse application with our application id, client key and server url
+        JodaTimeAndroid.init(this)
 
     }
 

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MasaiConference</string>
     <string name="app_server_url">https://meet.jit.si</string>
-    <string name="app_dynamic_link_url_prefix">https://meetlyapp.page.link</string>
+    <string name="app_dynamic_link_url_prefix">https://masaiconference.page.link/rniX</string>
     <string name="app_deep_link_url">https://meetly.aculix.com/?meetingCode=%1$s</string>
     <string name="app_deep_link_domain">meetly.aculix.com</string>
     <string name="app_tagline">Instant video conferences with your family, friends, and colleagues</string>
@@ -79,4 +79,23 @@
     <string name="faqs_password_protection_desc">You can always password protect the meeting once it has started. However, keep in mind that the password will be reset once the meeting is ended. So make sure to set the password again if a meeting is rejoined after it was ended.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_about_theme">Meeting</string>
+    <string name="title_about_privacy">Contacts</string>
+    <string name="title_about_rate">Chat</string>
+    <string name="title_about_more">General</string>
+    <string name="title_about_info">About</string>
+    <string name="sub_title_about_theme">Details of all meeting</string>
+    <string name="sub_title_about_privacy">Complete Details of your contacts</string>
+    <string name="sub_title_about_rate">Chat with your friends</string>
+    <string name="sub_title_about_more">General details for this app</string>
+    <string name="sub_title_about_info">Copyright © 2021 Donuts Team All right reserved.</string>
+
+    <string name="txt_profile_welcome">Welcome!</string>
+    <string name="txt_profile_not_registered">Not registered?</string>
+    <string name="txt_profile_register_now">Register Now</string>
+    <string name="txt_profile_login">LOGIN</string>
+    <string name="updating_profile">Updating Profile</string>
+    <string name="success_updating_profile">Update Successfully</string>
+    <string name="waiting_message">Please wait&#8230;</string>
 </resources>
