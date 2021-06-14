@@ -21,18 +21,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-
-        <activity android:name=".activity.JoinActivity"></activity>
+        <activity android:name=".activity.MeetingSettingActivity"></activity>
+        <activity android:name=".activity.JoinActivity" />
         <activity android:name=".activity.ContactActivity" />
         <activity android:name=".CratMeetingActivity" />
-
-       
         <activity android:name=".activity.HistoryActivity" />
         <activity android:name=".activity.AuthenticationActivity" />
         <activity android:name=".activity.IntroductionActivity" />
-        <activity android:name=".scheduler.views.AlarmActivity">
-
-        </activity>
+        <activity android:name=".scheduler.views.AlarmActivity"></activity>
         <activity
             android:name=".activity.SplashActivity"
             android:screenOrientation="portrait">
@@ -43,7 +39,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.MainActivity" />
-        <receiver android:name=".scheduler.controllers.AlarmReceiver" >
+
+        <receiver android:name=".scheduler.controllers.AlarmReceiver">
             <intent-filter>
                 <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
 

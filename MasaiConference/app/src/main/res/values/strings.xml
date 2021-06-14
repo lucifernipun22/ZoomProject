@@ -98,4 +98,7 @@
     <string name="updating_profile">Updating Profile</string>
     <string name="success_updating_profile">Update Successfully</string>
     <string name="waiting_message">Please wait&#8230;</string>
+    <string name="original_Sound">This will allow you to enable or disable original sound in a meeting. Original sound will turn off noise suppression</string>
+    <string name="ConnectedTime">Display o clock showing how long you have been connected to the meeting</string>
+    <string name="SafeDriveMode">Swipe right for safe driving mode. You will need to tap to speak and your video will be off</string>
 </resources>

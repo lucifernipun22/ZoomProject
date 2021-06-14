@@ -56,8 +56,8 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
             //AppPref.isUserAuthenticated = true
             val intent = Intent(this@AuthenticationActivity , MainActivity::class.java)
             startActivity(intent)
-
             return
+
         } else {
             // Sign in failed
             if (response == null) {

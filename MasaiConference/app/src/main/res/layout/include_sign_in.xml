@@ -7,7 +7,7 @@
     android:padding="10dp">
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/img_profile2"
+        android:id="@+id/Iv_UserProfilePicSetting"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:src="@drawable/ic_baseline_account_circle_24"
@@ -21,11 +21,11 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_toEndOf="@+id/img_profile2"
-        android:layout_toRightOf="@+id/img_profile2">
+        android:layout_toEndOf="@+id/Iv_UserProfilePicSetting"
+        android:layout_toRightOf="@+id/Iv_UserProfilePicSetting">
 
         <TextView
-            android:id="@+id/txt_welcome"
+            android:id="@+id/Tv_UserDisplayNameSetting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
@@ -38,16 +38,16 @@
             android:id="@+id/txt_not_registered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_welcome"
+            android:layout_below="@+id/Tv_UserDisplayNameSetting"
             android:layout_marginTop="@dimen/dp_6"
             android:background="@drawable/googleg_standard_color_18"
             />
 
         <TextView
-            android:id="@+id/txt_register"
+            android:id="@+id/Tv_UserEmailSetting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_welcome"
+            android:layout_below="@+id/Tv_UserDisplayNameSetting"
             android:layout_marginBottom="6dp"
             android:layout_toEndOf="@+id/txt_not_registered"
             android:layout_toRightOf="@+id/txt_not_registered"

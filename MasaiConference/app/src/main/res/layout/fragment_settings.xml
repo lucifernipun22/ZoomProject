@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".fragment.SettingsFragment">
 
-
-    <!--<LinearLayout
-        android:id="@+id/root_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">-->
     <include
         android:id="@+id/app_bar"
         layout="@layout/app_bar_settings" />
@@ -38,7 +32,7 @@
             app:layout_constraintVertical_bias="0.13">
 
             <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/img_profile2"
+                android:id="@+id/Iv_UserProfilePicSetting"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="@dimen/dp_20"
@@ -47,16 +41,17 @@
                 app:riv_oval="true" />
 
             <RelativeLayout
+                android:id="@+id/rl_UserProfileSetting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_toEndOf="@+id/img_profile2"
-                android:layout_toRightOf="@+id/img_profile2">
+                android:layout_toEndOf="@+id/Iv_UserProfilePicSetting"
+                android:layout_toRightOf="@+id/Iv_UserProfilePicSetting">
 
                 <TextView
-                    android:id="@+id/txt_welcome"
+                    android:id="@+id/Tv_UserDisplayNameSetting"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
@@ -69,15 +64,15 @@
                     android:id="@+id/txt_not_registered"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_welcome"
+                    android:layout_below="@+id/Tv_UserDisplayNameSetting"
                     android:layout_marginTop="@dimen/dp_10"
                     android:background="@drawable/googleg_standard_color_18" />
 
                 <TextView
-                    android:id="@+id/txt_register"
+                    android:id="@+id/Tv_UserEmailSetting"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_welcome"
+                    android:layout_below="@+id/Tv_UserDisplayNameSetting"
                     android:layout_marginTop="@dimen/dp_10"
                     android:layout_marginBottom="6dp"
                     android:layout_toEndOf="@+id/txt_not_registered"
@@ -87,8 +82,8 @@
                     android:paddingLeft="6dp"
                     android:paddingEnd="6dp"
                     android:paddingRight="6dp"
-                    android:text="lucifernipun22@gmail.com"
-                    android:textStyle="bold" />
+                    android:text="luc********@gmail.com"
+                    android:textStyle="normal" />
 
             </RelativeLayout>
 
@@ -96,6 +91,7 @@
         </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -113,7 +109,7 @@
             tools:layout_editor_absoluteX="10dp">
 
             <LinearLayout
-                android:id="@+id/lyt_login_register2"
+                android:id="@+id/lyt_MeetingSetting"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -151,7 +147,6 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -168,7 +163,7 @@
             tools:layout_editor_absoluteX="10dp">
 
             <LinearLayout
-                android:id="@+id/lyt_login_register3"
+                android:id="@+id/lyt_ContactSetting"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -205,7 +200,6 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -222,7 +216,7 @@
             tools:layout_editor_absoluteX="10dp">
 
             <LinearLayout
-                android:id="@+id/lyt_login_register4"
+                android:id="@+id/lyt_ChatSetting"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -277,7 +271,7 @@
             tools:layout_editor_absoluteX="10dp">
 
             <LinearLayout
-                android:id="@+id/lyt_login_register5"
+                android:id="@+id/lyt_GeneralSetting"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -332,7 +326,7 @@
             tools:layout_editor_absoluteX="10dp">
 
             <LinearLayout
-                android:id="@+id/lyt_login_register6"
+                android:id="@+id/lyt_AboutSetting"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -375,7 +369,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/btn_update"
+            android:id="@+id/btn_Logout_Setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

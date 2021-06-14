@@ -7,18 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-import com.masai.masaiconference.CratMeetingActivity
+import com.masai.masaiconference.CreatMeetingActivity
 import com.masai.masaiconference.R
 import com.masai.masaiconference.activity.ContactActivity
 import com.masai.masaiconference.activity.HistoryActivity
 import com.masai.masaiconference.activity.JoinActivity
 import com.masai.masaiconference.scheduler.views.AlarmActivity
 import kotlinx.android.synthetic.main.fragment_meetand_chat.*
-
-
-import com.masai.masaiconference.R
-import com.masai.masaiconference.activity.HistoryActivity
-
 import kotlinx.android.synthetic.main.fragment_meetand_chat.view.*
 
 
@@ -62,9 +57,7 @@ class MeetandChatFragment : Fragment() {
 
     private fun secondInit(view: View){
         view.appCompatButton_create.setOnClickListener {
-            val intent = Intent(activity, CreateMeetingActivity::class.java)
-
-
+            val intent = Intent(activity, CreatMeetingActivity::class.java)
             startActivity(intent)
         }
     }
