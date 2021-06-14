@@ -61,8 +61,7 @@ class SettingsFragment : Fragment(), View.OnClickListener {
                 replaceFragment(MeetingSettingFragment.newInstance())
             }
             lyt_ContactSetting -> {
-                Toast.makeText(context, "We Are Working On Contact Setting", Toast.LENGTH_SHORT)
-                    .show()
+                replaceFragment(ContactSettingFragment.newInstance())
             }
             lyt_ChatSetting -> {
                 Toast.makeText(context, "We Are Working On Chat Setting", Toast.LENGTH_SHORT).show()
