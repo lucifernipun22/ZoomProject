@@ -98,4 +98,7 @@
     <string name="updating_profile">Updating Profile</string>
     <string name="success_updating_profile">Update Successfully</string>
     <string name="waiting_message">Please wait&#8230;</string>
+
+    <string name="give_correct_information">Please your give correct information. Because, your email &amp; phone number needs to be verification.</string>
+    <string name="register_success_popup">Registered successfully.\nVerification email has been sent.\nPlease verify email.</string>
 </resources>

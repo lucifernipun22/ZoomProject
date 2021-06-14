@@ -63,7 +63,7 @@
             android:padding="12dp"
             android:paddingTop="@dimen/dp_5"
             android:gravity="center"
-            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_22"
             android:background="@drawable/big_round"
             android:backgroundTint="#d9642e"
 
@@ -99,13 +99,13 @@
             android:textSize="@dimen/sp_10"
             android:layout_marginEnd="@dimen/dp_25"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/appCompatButton2"
+            app:layout_constraintEnd_toStartOf="@+id/joinMeeting"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appCompatButton_create"
             app:layout_constraintVertical_bias="0.01999998" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/appCompatButton2"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/joinMeeting"
             android:layout_width="@dimen/dp_50"
             android:layout_height="@dimen/dp_50"
             android:background="@drawable/big_round"
@@ -113,6 +113,12 @@
             app:icon="@drawable/add"
             app:iconGravity="textTop"
             app:iconPadding="@dimen/dp_2"
+            android:padding="12dp"
+            android:gravity="center"
+            android:drawableStart="@drawable/add"
+
+
+
             android:paddingTop="@dimen/dp_5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/appCompatButton3"
@@ -128,20 +134,24 @@
             android:text="Join"
             android:textSize="@dimen/sp_10"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/appCompatButton2"
-            app:layout_constraintStart_toStartOf="@+id/appCompatButton2"
+            app:layout_constraintEnd_toEndOf="@+id/joinMeeting"
+            app:layout_constraintStart_toStartOf="@+id/joinMeeting"
             app:layout_constraintTop_toBottomOf="@+id/appCompatButton_create"
             app:layout_constraintVertical_bias="0.01999998" />
-        <com.google.android.material.button.MaterialButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/appCompatButton3"
             android:layout_width="@dimen/dp_50"
             android:layout_height="@dimen/dp_50"
+            android:drawableStart="@drawable/ic_date"
+            android:layout_marginStart="@dimen/dp_22"
             android:background="@drawable/big_round"
             android:backgroundTint="#1976D2"
             app:icon="@drawable/ic_date"
             app:iconGravity="top"
             app:iconPadding="@dimen/dp_2"
             android:paddingTop="@dimen/dp_5"
+            android:padding="12dp"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/appCompatButton_create"
@@ -166,10 +176,13 @@
             android:layout_height="@dimen/dp_50"
             android:background="@drawable/big_round"
             android:backgroundTint="#1976D2"
-            app:icon="@drawable/ic_upload"
-            app:iconGravity="top"
-            app:iconPadding="@dimen/dp_2"
+            android:drawableStart="@drawable/ic_upload"
             android:paddingTop="@dimen/dp_5"
+            app:icon="@drawable/add"
+            app:iconGravity="textTop"
+            app:iconPadding="@dimen/dp_2"
+            android:padding="12dp"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/appCompatButton3"
@@ -218,13 +231,17 @@
                 app:layout_constraintVertical_bias="0.0">
 
 
-                <com.google.android.material.button.MaterialButton
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnRejoinMeeting"
                     android:layout_width="@dimen/dp_50"
                     android:layout_height="@dimen/dp_50"
                     android:layout_marginStart="@dimen/dp_20"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_baseline_perm_contact_calendar_24"
+                    android:padding="12dp"
+                    android:drawableTint="@color/white"
+                    android:gravity="center"
                     android:background="@drawable/big_round"
                     android:backgroundTint="#1976D2"
                     android:paddingTop="@dimen/dp_5"

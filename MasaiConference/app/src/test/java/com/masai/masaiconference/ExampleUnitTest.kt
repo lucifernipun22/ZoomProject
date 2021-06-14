@@ -1,4 +1,4 @@
-package com.masai.masaiconference
+package com.nhs.masaiconference
 
 import org.junit.Test
 

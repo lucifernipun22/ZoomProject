@@ -19,81 +19,92 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
+
+
+
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_profile"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_100"
+            android:layout_margin="@dimen/dp_10"
             android:background="@drawable/big_round"
             app:cardCornerRadius="@dimen/dp_10"
-            android:layout_margin="@dimen/dp_10"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.13">
-        <RelativeLayout
-            android:id="@+id/lyt_login_register"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:padding="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.13">
+            app:layout_constraintVertical_bias="0.13"
+            tools:layout_editor_absoluteX="10dp">
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/img_profile2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="@dimen/dp_20"
-                android:padding="4dp"
-                android:src="@drawable/ic_baseline_account_circle_24"
-                app:riv_oval="true" />
+
 
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_toEndOf="@+id/img_profile2"
-                android:layout_toRightOf="@+id/img_profile2">
+                android:id="@+id/lyt_login_register"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13">
 
-                <TextView
-                    android:id="@+id/txt_welcome"
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_profile2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_baseline_account_circle_24"
+                    app:riv_oval="true" />
+
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Nipun Jain"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/img_profile2"
+                    android:layout_toRightOf="@+id/img_profile2">
 
-                <ImageView
-                    android:id="@+id/txt_not_registered"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_welcome"
-                    android:layout_marginTop="@dimen/dp_10"
-                    android:background="@drawable/googleg_standard_color_18" />
+                    <TextView
+                        android:id="@+id/txt_welcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Nipun Jain"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/txt_register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_welcome"
-                    android:layout_marginTop="@dimen/dp_10"
-                    android:layout_marginBottom="6dp"
-                    android:layout_toEndOf="@+id/txt_not_registered"
-                    android:layout_toRightOf="@+id/txt_not_registered"
-                    android:background="?attr/selectableItemBackground"
-                    android:paddingStart="6dp"
-                    android:paddingLeft="6dp"
-                    android:paddingEnd="6dp"
-                    android:paddingRight="6dp"
-                    android:text="lucifernipun22@gmail.com"
-                    android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/txt_not_registered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_welcome"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/googleg_standard_color_18" />
+
+                    <TextView
+                        android:id="@+id/txt_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_welcome"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="6dp"
+                        android:layout_toEndOf="@+id/txt_not_registered"
+                        android:layout_toRightOf="@+id/txt_not_registered"
+                        android:background="?attr/selectableItemBackground"
+                        android:paddingStart="6dp"
+                        android:paddingLeft="6dp"
+                        android:paddingEnd="6dp"
+                        android:paddingRight="6dp"
+                        android:text="lucifernipun22@gmail.com"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
 
             </RelativeLayout>
 
-
-        </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
