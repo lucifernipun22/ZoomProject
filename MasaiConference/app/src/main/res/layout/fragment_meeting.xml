@@ -12,10 +12,79 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-
-
-
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2">
+            <TextView
+                android:id="@+id/TVMeetingID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_centerHorizontal="true"
+                android:text="Personal Meeting ID"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="@dimen/text_size_s"/>
+            <TextView
+                android:id="@+id/TVMeetingID_No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_centerHorizontal="true"
+                android:text="470 691 7250"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/TVMeetingID"
+                android:textSize="@dimen/text_size_l"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@id/TVMeetingID_No"
+                android:layout_margin="@dimen/dp_5">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_MeetingStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/sp_15"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/grey_round"
+                    android:layout_margin="@dimen/dp_5"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_SendInvitation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Invitation"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/sp_15"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/grey_round"
+                    android:layout_margin="@dimen/dp_5"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_MeetingEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/sp_15"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/grey_round"
+                    android:layout_margin="@dimen/dp_5"/>
+            </LinearLayout>
+        </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </FrameLayout>

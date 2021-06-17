@@ -21,6 +21,9 @@
     <string name="authentication_sign_in_google">Sign in with Google</string>
     <string name="authentication_login_canceled">Sign in canceled</string>
 
+    <string name="font_bold">fonts/proximanova_bold.otf</string>
+    <string name="font_light">fonts/proximanova_light.otf</string>
+    <string name="backtext">Click BACK again to exit</string>
     <string name="main_join_meeting">Join Meeting</string>
     <string name="main_create_meeting">Create Meeting</string>
     <string name="main_meeting_code">Meeting Code</string>

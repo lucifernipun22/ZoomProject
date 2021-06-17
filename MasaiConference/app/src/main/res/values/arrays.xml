@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="arr_home_title">
+        <item>Basal Metabolic Rate</item>
+        <item>Blood Alcohol Content</item>
+        <item>Blood Donation</item>
+        <item>Blood Pressure</item>
+        <item>Blood Sugar</item>
+        <item>Blood Volume</item>
+
+    </array>
+    <array name="arr_home_image1">
+        <item>img_basal_metabolic_rate1</item>
+        <item>img_basal_metabolic_rate1</item>
+        <item>img_blood_donation1</item>
+        <item>img_basal_metabolic_rate1</item>
+        <item>img_basal_metabolic_rate1</item>
+        <item>img_basal_metabolic_rate1</item>
+
+
+    </array>
+</resources>

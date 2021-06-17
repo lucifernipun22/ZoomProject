@@ -20,4 +20,11 @@
     <color name="black_overlay">#66000000</color>
     <color name="colorRipple">#BCBEC1</color>
     <color name="gray">#c7c7c7</color>
+
+    <color name="mainactivity_text">#ff3c494f</color>
+    <color name="colorgrey">#ffe5e4e4</color>
+    <color name="lightestgrey">#ff8d8d8d</color>
+    <color name="textColor">#ffb4bcc0</color>
+    <color name="gray_color">#E6E6E6</color>
+    <color name="grey_calendar">#434343</color>
 </resources>

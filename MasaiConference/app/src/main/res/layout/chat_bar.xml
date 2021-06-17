@@ -24,6 +24,7 @@
         android:layout_below="@id/chat_user_name"
         />
 
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/chat_profile_image"
         android:layout_width="40dp"
