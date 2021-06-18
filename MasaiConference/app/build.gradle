@@ -159,7 +159,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
 
     // Jitsi
-    implementation('org.jitsi.react:jitsi-meet-sdk:2.9.0') { transitive = true }
+    /*implementation('org.jitsi.react:jitsi-meet-sdk:2.9.0') { transitive = true }*/
+
+    implementation ('org.jitsi.react:jitsi-meet-sdk:2.+') { transitive = true }
 
     // Material theme
     implementation "com.google.android.material:material:1.1.0"

@@ -25,6 +25,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class CreatMeetingActivity : AppCompatActivity() {
 
+
     private val viewModel by viewModel<MainViewModel>() // Lazy inject ViewModel
     private lateinit var binding: ActivityCreatMeetingBinding
 
@@ -49,12 +50,13 @@ class CreatMeetingActivity : AppCompatActivity() {
         binding.etCodeCreateMeeting.setText(meetingCode)
 
         onCreateMeetingCodeChange()
-        onShareMeetingCodeClick()
+        onShareMeetingCodeClick(MEETING_CODE)
         onCreateMeetingClick()
         ivMeetingHistory.setOnClickListener {
             onHistory()
         }
     }
+
 
     private fun onHistory() {
         val intent = Intent(this@CreatMeetingActivity, HistoryActivity::class.java)
@@ -96,9 +98,9 @@ class CreatMeetingActivity : AppCompatActivity() {
 
 
 
-    private fun onShareMeetingCodeClick() {
+    private fun onShareMeetingCodeClick(meetingCode : String) {
         binding.tilCodeCreateMeeting.setEndIconOnClickListener {
-            if (isMeetingCodeValid(getCreateMeetingCode())) {
+            /*if (isMeetingCodeValid(getCreateMeetingCode())) {
                 tilCodeCreateMeeting.error = null
                 toast(getString(R.string.main_creating_dynamic_link))
 
@@ -121,7 +123,14 @@ class CreatMeetingActivity : AppCompatActivity() {
             } else {
                 binding.tilCodeCreateMeeting.error =
                     getString(R.string.main_error_meeting_code_length, minMeetingCodeLength)
+            }*/
+            val sendIntent: Intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, meetingCode)
+                type = "text/plain"
             }
+            val shareIntent = Intent.createChooser(sendIntent, "Share Meeting Invitation")
+            startActivity(shareIntent)
         }
     }
 
