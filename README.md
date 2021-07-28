@@ -14,7 +14,7 @@
 * we have also implemeted live chatting with your friends without live meeting.
 * you can also see your friends last seen in our app.
 * you can send friend request with your friends.
-* Details about every furniture item are are available in the app.
+
 
 ## Screenshots
 
